@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>おかもとたいち | エンジニア × 副業</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <span class="nav-logo">おかもとたいち</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">できること</a></li>
+        <li><a href="#works">実績</a></li>
+        <li><a href="#contact" class="nav-cta">相談する</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero セクション -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-code-bg" aria-hidden="true">
+        <pre class="code-snippet">
+const dream = async (idea) => {
+  const plan = await discuss(idea);
+  const product = await build(plan);
+  return product; // ワクワク
+};
+        </pre>
+      </div>
+      <div class="hero-dots" aria-hidden="true"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Engineer / App Developer</p>
+      <h1 class="hero-headline">
+        エンジニアが、<br />ポーカーバーの店長になって、<br />またコードを書いています。
+      </h1>
+      <p class="hero-sub">
+        アイデアの段階から相談してください。<br />
+        一緒にワクワクするものをつくりましょう。
+      </p>
+      <a href="#contact" class="btn btn-primary scroll-btn">相談してみる</a>
+    </div>
+    <a href="#about" class="hero-scroll-down" aria-label="下へスクロール">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- About セクション -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-inner">
+        <div class="about-image-wrap">
+          <img
+            src="images/avatar.png"
+            alt="おかもとたいちの似顔絵"
+            class="about-avatar"
+            width="280"
+            height="280"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="about-avatar-placeholder">
+            <span>似顔絵<br/>ここに入ります</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-name">おかもとたいち</h3>
+          <p>
+            アイデアから実装まで、Claudeと一緒に一気通貫で形にするエンジニアです。
+          </p>
+          <p>
+            新卒からカーナビゲーションの開発に携わり、要件定義から設計・製造・テストを経て運用まで、大規模なV字開発を経験しました。その後、ポーカーバーで店長として現場を切り盛りしながら、スタッフ教育や経理システムの構築も自分でやりきりました。現在は車載システムの開発にフルリモートで携わっています。
+          </p>
+          <p>
+            友人の困りごとや自分が現場で感じた課題をアプリにしてきました。「こんなの作れたら楽なのに」がワクワクに変わる瞬間が好きです。
+          </p>
+          <p>
+            場所を選ばず、自分のペースで価値を届ける働き方を本気で目指しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- できること セクション -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2 class="section-title">できること</h2>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🛠️</div>
+          <h3 class="card-title">社内ツール・業務自動化の開発</h3>
+          <p class="card-body">
+            「こんなの作れたら楽なのに」をそのまま話してください。アイデアが曖昧な段階から一緒に整理して、実際に動くものを届けます。ExcelのVBA自動化から、日常業務を助けるオリジナルアプリまで対応します。
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🤖</div>
+          <h3 class="card-title">AI活用の相談・サポート</h3>
+          <p class="card-body">
+            ChatGPTやClaudeをどう使えばいいかわからない、という段階でも大丈夫です。業務のどこにAIが使えそうか、一緒に可能性を探ります。
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">📋</div>
+          <h3 class="card-title">要件定義から実装までお任せください</h3>
+          <p class="card-body">
+            何を作るかの整理から、設計・製造・テストまで、必要な範囲でお任せください。「うまく説明できないけど困っている」という状態からでも、丁寧にヒアリングして形にします。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 実績 セクション -->
+  <section class="section works" id="works">
+    <div class="container">
+      <h2 class="section-title">実績</h2>
+      <div class="works-grid">
+
+        <div class="work-card">
+          <div class="work-image-wrap">
+            <img
+              src="images/work1.png"
+              alt="ポーカーディーラーサポートアプリのスクリーンショット"
+              class="work-screenshot work-screenshot-1"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="work-img-placeholder">
+              <span>スクリーンショット<br/>ここに入ります</span>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3 class="work-title">ポーカーディーラーサポートアプリ</h3>
+            <p class="work-body">
+              経験の浅いディーラーが独学でスキルを身につけるのが難しいという課題に対し、判定問題の自動生成と画像認識によるシチュエーション判定機能を実装。学習と実践の両方を助けるツールを開発。
+            </p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-image-wrap">
+            <img
+              src="images/work2.png"
+              alt="ポーカーシチュエーション記録・動画生成アプリのスクリーンショット"
+              class="work-screenshot work-screenshot-2"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="work-img-placeholder">
+              <span>スクリーンショット<br/>ここに入ります</span>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3 class="work-title">
+              ポーカーシチュエーション記録・動画生成アプリ
+              <span class="badge badge-wip">開発中</span>
+            </h3>
+            <p class="work-body">
+              ポーカーのプレイ内容を記録・振り返る手段がないという課題に対し、カードや数値をアプリに記録しデータとして出力できる仕組みを実装。記録データをもとに動画生成へつなげる機能を現在開発中。
+            </p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-image-wrap">
+            <img
+              src="images/work3.png"
+              alt="Discord／Zoom同時送信アプリのスクリーンショット"
+              class="work-screenshot work-screenshot-3"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="work-img-placeholder">
+              <span>スクリーンショット<br/>ここに入ります</span>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3 class="work-title">Discord／Zoom 同時送信アプリ</h3>
+            <p class="work-body">
+              ZoomとDiscordを同時使用中、チャット入力を二度手間でやっていた友人の困りごとに対し、一度の入力で両方のチャット欄へ同時送信できるアプリを開発。チャット欄の自動検索とメッセージ転送のアルゴリズムを自作。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact セクション -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">お気軽にご相談ください</h2>
+      <p class="contact-lead">
+        「こんなもの作れる？」「うまく説明できないけど困っている」<br />——そんな段階でも大歓迎です。まずは話してみてください。
+      </p>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="6" placeholder="ご相談の内容をお気軽にどうぞ。「こんなのできる？」くらいでも大丈夫です。" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-send">送信する</button>
+      </form>
+      <p class="contact-note">お仕事はすべてフルリモートで対応しております。土日祝・平日夜もお気軽にご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-name">おかもとたいち</p>
+      <p class="footer-copy">&copy; 2025 おかもとたいち. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
