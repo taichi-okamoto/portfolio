@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>おかもとたいち | Engineer / App Developer</title>
+  <meta name="description" content="業務改善ツール・小規模アプリ開発を中心に、アイデア整理から実装・テストまで対応するエンジニア。Excel自動化、AI活用相談、アプリ開発など非エンジニアの方にもわかりやすく対応します。" />
+  <meta property="og:title" content="おかもとたいち | Engineer / App Developer" />
+  <meta property="og:description" content="現場の困りごとを、AIと開発の力で「使えるツール」にするエンジニアです。アイデア整理から実装・テストまで対応します。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taichi-okamoto.github.io/portfolio/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet" />
@@ -17,8 +22,9 @@
       <span class="nav-logo">おかもとたいち</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#services">できること</a></li>
+        <li><a href="#services">ご相談いただけること</a></li>
         <li><a href="#works">実績</a></li>
+        <li><a href="#flow">進め方</a></li>
         <li><a href="#contact" class="nav-cta">相談する</a></li>
       </ul>
       <button class="nav-hamburger" aria-label="メニューを開く" aria-expanded="false">
@@ -32,10 +38,11 @@
     <div class="hero-bg">
       <div class="hero-code-bg" aria-hidden="true">
         <pre class="code-snippet">
-const dream = async (idea) => {
-  const plan = await discuss(idea);
-  const product = await build(plan);
-  return product; // ワクワク
+const solve = async (problem) => {
+  const spec = await discuss(problem);
+  const tool = await build(spec);
+  await verify(tool);
+  return tool; // 現場で使える
 };
         </pre>
       </div>
@@ -44,11 +51,13 @@ const dream = async (idea) => {
     <div class="hero-content">
       <p class="hero-eyebrow">Engineer / App Developer</p>
       <h1 class="hero-headline">
-        エンジニアが、<br />ポーカーバーの店長になって、<br />またコードを書いています。
+        現場の困りごとを、<br />AIと開発の力で<br />「使えるツール」にします。
       </h1>
       <p class="hero-sub">
-        アイデアの段階から相談してください。<br />
-        一緒にワクワクするものをつくりましょう。
+        Excel作業の自動化、業務改善アプリ、AI活用相談など、<br />
+        アイデアの整理から実装・テストまで対応します。<br />
+        大規模開発と店舗運営の両方を経験したエンジニアが、<br />
+        非エンジニアの方にもわかりやすく伴走します。
       </p>
       <a href="#contact" class="btn btn-primary scroll-btn">相談してみる</a>
     </div>
@@ -78,53 +87,80 @@ const dream = async (idea) => {
         <div class="about-text">
           <h3 class="about-name">おかもとたいち</h3>
           <p>
-            アイデアから実装まで、Claudeと一緒に一気通貫で形にするエンジニアです。
+            業務改善アプリや小規模ツール開発を中心に、アイデア整理から実装・テストまで対応するエンジニアです。
           </p>
           <p>
-            新卒からカーナビゲーションの開発に携わり、要件定義から設計・製造・テストを経て運用まで、大規模なV字開発を経験しました。その後、ポーカーバーで店長として現場を切り盛りしながら、スタッフ教育や経理システムの構築も自分でやりきりました。現在は車載システムの開発にフルリモートで携わっています。
+            新卒からカーナビゲーション開発に携わり、要件定義・設計・製造・テスト・運用まで、大規模開発の一連の工程を経験してきました。現在も車載システム開発に携わっています。
           </p>
           <p>
-            友人の困りごとや自分が現場で感じた課題をアプリにしてきました。「こんなの作れたら楽なのに」がワクワクに変わる瞬間が好きです。
+            一方で、ポーカーバーの店長として店舗運営の現場にも立ち、スタッフ教育や業務改善、経理まわりの仕組みづくりも行ってきました。エンジニアが、ポーカーバーの店長になって、またコードを書いています。
           </p>
           <p>
-            場所を選ばず、自分のペースで価値を届ける働き方を本気で目指しています。
+            エンジニア目線だけでなく、現場で実際に使う人の目線も大切にしながら、「こんなの作れたら楽なのに」という段階から一緒に整理し、実際に使える形まで落とし込みます。
+          </p>
+          <p>
+            AIも積極的に活用し、仕様整理・試作・実装検証のスピードを高めています。ただし、AI任せではなく、エンジニアとして設計・実装・検証まで責任を持って対応します。
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- できること セクション -->
+  <!-- ご相談いただけること セクション -->
   <section class="section services" id="services">
     <div class="container">
-      <h2 class="section-title">できること</h2>
+      <h2 class="section-title">ご相談いただけること</h2>
       <div class="cards-grid">
 
         <div class="card">
           <div class="card-icon" aria-hidden="true">🛠️</div>
-          <h3 class="card-title">社内ツール・業務自動化の開発</h3>
+          <h3 class="card-title">業務改善ツール・小規模アプリ開発</h3>
           <p class="card-body">
-            「こんなの作れたら楽なのに」をそのまま話してください。アイデアが曖昧な段階から一緒に整理して、実際に動くものを届けます。ExcelのVBA自動化から、日常業務を助けるオリジナルアプリまで対応します。
+            Excel作業、転記、集計、入力補助、記録管理など、日々の面倒な作業を減らすツールを作ります。小さく試せる形から作り、実際の業務に合わせて改善していきます。
           </p>
         </div>
 
         <div class="card">
           <div class="card-icon" aria-hidden="true">🤖</div>
-          <h3 class="card-title">AI活用の相談・サポート</h3>
+          <h3 class="card-title">AI活用サポート</h3>
           <p class="card-body">
-            ChatGPTやClaudeをどう使えばいいかわからない、という段階でも大丈夫です。業務のどこにAIが使えそうか、一緒に可能性を探ります。
+            ChatGPTやClaudeを業務にどう使えばよいか、一緒に整理します。文章作成、要約、分類、アイデア整理、簡易ツール化など、無理なく使える形に落とし込みます。
           </p>
         </div>
 
         <div class="card">
           <div class="card-icon" aria-hidden="true">📋</div>
-          <h3 class="card-title">要件定義から実装までお任せください</h3>
+          <h3 class="card-title">アイデア整理・要件定義</h3>
           <p class="card-body">
-            何を作るかの整理から、設計・製造・テストまで、必要な範囲でお任せください。「うまく説明できないけど困っている」という状態からでも、丁寧にヒアリングして形にします。
+            「何を作ればいいかわからない」「うまく説明できない」という段階から相談できます。必要な機能、画面イメージ、優先順位を整理し、実装できる形にします。
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">⚙️</div>
+          <h3 class="card-title">設計・実装・テスト</h3>
+          <p class="card-body">
+            大規模開発で培った経験を活かし、作って終わりではなく、使いやすさや動作確認まで意識して開発します。小規模案件でも、仕様整理・設計・実装・テストの流れを大切にします。
           </p>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- こんな方におすすめ セクション -->
+  <section class="section target-section" id="target">
+    <div class="container">
+      <h2 class="section-title">こんな方におすすめ</h2>
+      <ul class="target-list">
+        <li>Excelや手作業の転記を減らしたい</li>
+        <li>日々の業務を少しでも自動化したい</li>
+        <li>小さな業務ツールを作りたい</li>
+        <li>ChatGPTやClaudeを仕事に活かしたい</li>
+        <li>アイデアはあるが、どう作ればいいかわからない</li>
+        <li>専門用語ばかりではなく、相談しながら進めたい</li>
+        <li>個人事業や小規模チーム向けに、現実的な範囲で開発してほしい</li>
+      </ul>
     </div>
   </section>
 
@@ -148,9 +184,28 @@ const dream = async (idea) => {
           </div>
           <div class="work-info">
             <h3 class="work-title">ポーカーディーラーサポートアプリ</h3>
-            <p class="work-body">
-              経験の浅いディーラーが独学でスキルを身につけるのが難しいという課題に対し、判定問題の自動生成と画像認識によるシチュエーション判定機能を実装。学習と実践の両方を助けるツールを開発。
-            </p>
+            <dl class="work-meta">
+              <div class="work-meta-row">
+                <dt>課題</dt>
+                <dd>経験の浅いディーラーが、実践的なシチュエーションを一人で学ぶのが難しい。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>対応</dt>
+                <dd>判定問題の自動生成や、画像認識によるシチュエーション判定機能を備えた学習支援ツールを開発。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>工夫</dt>
+                <dd>現場で起こりやすい状況を題材にし、学習と実践の両方に役立つ構成にした。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>担当範囲</dt>
+                <dd>課題整理、仕様検討、設計、実装、動作確認。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>使用技術</dt>
+                <dd>画像認識、アプリ開発、自動生成ロジックなど。</dd>
+              </div>
+            </dl>
           </div>
         </div>
 
@@ -171,9 +226,28 @@ const dream = async (idea) => {
               ポーカーシチュエーション記録・動画生成アプリ
               <span class="badge badge-wip">開発中</span>
             </h3>
-            <p class="work-body">
-              ポーカーのプレイ内容を記録・振り返る手段がないという課題に対し、カードや数値をアプリに記録しデータとして出力できる仕組みを実装。記録データをもとに動画生成へつなげる機能を現在開発中。
-            </p>
+            <dl class="work-meta">
+              <div class="work-meta-row">
+                <dt>課題</dt>
+                <dd>ポーカーのプレイ内容を記録し、あとから振り返る手段が少ない。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>対応</dt>
+                <dd>カードや数値をアプリ上で記録し、データとして出力できる仕組みを開発。記録データをもとに動画生成へつなげる機能も開発中。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>工夫</dt>
+                <dd>入力しやすさと、あとから振り返りやすいデータ構造を意識。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>担当範囲</dt>
+                <dd>アイデア整理、仕様検討、設計、実装、動作確認。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>使用技術</dt>
+                <dd>アプリ開発、データ出力、動画生成連携など。</dd>
+              </div>
+            </dl>
           </div>
         </div>
 
@@ -191,9 +265,28 @@ const dream = async (idea) => {
           </div>
           <div class="work-info">
             <h3 class="work-title">Discord／Zoom 同時送信アプリ</h3>
-            <p class="work-body">
-              ZoomとDiscordを同時使用中、チャット入力を二度手間でやっていた友人の困りごとに対し、一度の入力で両方のチャット欄へ同時送信できるアプリを開発。チャット欄の自動検索とメッセージ転送のアルゴリズムを自作。
-            </p>
+            <dl class="work-meta">
+              <div class="work-meta-row">
+                <dt>課題</dt>
+                <dd>ZoomとDiscordを同時使用していると、同じメッセージをそれぞれのチャット欄に入力する手間がある。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>対応</dt>
+                <dd>一度の入力で、両方のチャット欄へ同時に送信できるアプリを開発。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>工夫</dt>
+                <dd>チャット欄の自動検索と、メッセージ転送のアルゴリズムを自作。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>担当範囲</dt>
+                <dd>ヒアリング、仕様検討、設計、実装、動作確認。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>使用技術</dt>
+                <dd>デスクトップ操作自動化、チャット欄検出、メッセージ転送ロジックなど。</dd>
+              </div>
+            </dl>
           </div>
         </div>
 
@@ -201,12 +294,88 @@ const dream = async (idea) => {
     </div>
   </section>
 
+  <!-- 進め方 セクション -->
+  <section class="section flow-section" id="flow">
+    <div class="container">
+      <h2 class="section-title">ご相談から納品までの流れ</h2>
+      <ol class="flow-list">
+        <li class="flow-item">
+          <div class="flow-num">1</div>
+          <div class="flow-body">
+            <h3 class="flow-title">ヒアリング</h3>
+            <p class="flow-text">困っていること、作りたいもの、現在の作業内容を伺います。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-num">2</div>
+          <div class="flow-body">
+            <h3 class="flow-title">仕様整理</h3>
+            <p class="flow-text">必要な機能、画面イメージ、優先順位を整理します。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-num">3</div>
+          <div class="flow-body">
+            <h3 class="flow-title">試作</h3>
+            <p class="flow-text">まずは小さく動く形を作り、方向性を確認します。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-num">4</div>
+          <div class="flow-body">
+            <h3 class="flow-title">修正・改善</h3>
+            <p class="flow-text">実際に触っていただきながら、使いやすい形に調整します。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-num">5</div>
+          <div class="flow-body">
+            <h3 class="flow-title">納品</h3>
+            <p class="flow-text">動作確認を行い、必要に応じて使い方も説明します。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 対応範囲 セクション -->
+  <section class="section scope-section" id="scope">
+    <div class="container">
+      <h2 class="section-title">対応しやすいこと / 対応が難しいこと</h2>
+      <div class="scope-grid">
+        <div class="scope-card scope-ok">
+          <h3 class="scope-title">✅ 対応しやすいこと</h3>
+          <ul class="scope-list">
+            <li>小規模な業務改善ツール</li>
+            <li>個人事業主・店舗・小規模チーム向けのアプリ</li>
+            <li>Excel作業や入力作業の効率化</li>
+            <li>AIを使った作業効率化</li>
+            <li>既存業務のヒアリングからの改善提案</li>
+            <li>アイデア段階からの相談</li>
+          </ul>
+        </div>
+        <div class="scope-card scope-ng">
+          <h3 class="scope-title">⚠️ 対応が難しいこと</h3>
+          <ul class="scope-list">
+            <li>大規模なWebサービス開発を一人で短納期対応する案件</li>
+            <li>高度なデザイン制作のみの依頼</li>
+            <li>24時間即時対応が必要な保守</li>
+            <li>要件が頻繁に大きく変わる案件</li>
+            <li>法務・医療・金融など、専門的な判断責任が重い領域の単独対応</li>
+          </ul>
+          <p class="scope-note">不安な場合はお気軽にご相談ください。対応範囲を一緒に整理します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact セクション -->
   <section class="section contact" id="contact">
     <div class="container">
-      <h2 class="section-title">お気軽にご相談ください</h2>
+      <h2 class="section-title">まずは小さな相談からどうぞ</h2>
       <p class="contact-lead">
-        「こんなもの作れる？」「うまく説明できないけど困っている」<br />——そんな段階でも大歓迎です。まずは話してみてください。
+        「こんな作業を自動化できる？」「このアイデアはアプリにできる？」「AIを業務に使ってみたい」<br />
+        そんな段階からで大丈夫です。内容が固まっていなくても、ヒアリングしながら一緒に整理します。
       </p>
       <form class="contact-form" action="#" method="post" novalidate>
         <div class="form-group">
@@ -223,7 +392,7 @@ const dream = async (idea) => {
         </div>
         <button type="submit" class="btn btn-primary btn-send">送信する</button>
       </form>
-      <p class="contact-note">お仕事はすべてフルリモートで対応しております。土日祝・平日夜もお気軽にご相談ください。</p>
+      <p class="contact-note">フルリモートで対応しています。平日夜・土日祝のご相談も可能です。</p>
     </div>
   </section>
 
