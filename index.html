@@ -4,22 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>おかもとたいち | Engineer / App Developer</title>
-  <meta name="description" content="業務改善ツール・小規模アプリ開発を中心に、アイデア整理から実装・テストまで対応するエンジニア。Excel自動化、AI活用相談、アプリ開発など非エンジニアの方にもわかりやすく対応します。" />
+  <meta name="description" content="C/C++を中心とした組み込み開発の実務経験を土台に、業務改善ツール・小規模アプリ開発、AI活用相談まで対応するエンジニア。アイデア整理から実装・テストまで、非エンジニアの方にもわかりやすく伴走します。" />
   <meta property="og:title" content="おかもとたいち | Engineer / App Developer" />
   <meta property="og:description" content="現場の困りごとを、AIと開発の力で「使えるツール」にするエンジニアです。アイデア整理から実装・テストまで対応します。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://taichi-okamoto.github.io/portfolio/" />
+  <meta property="og:image" content="https://taichi-okamoto.github.io/portfolio/images/ogp.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260626-2" />
 </head>
 <body>
 
   <!-- ナビゲーション -->
   <header class="site-header">
     <nav class="nav-inner">
-      <span class="nav-logo">おかもとたいち</span>
+      <a href="#hero" class="nav-logo">おかもとたいち</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">ご相談いただけること</a></li>
@@ -49,14 +53,14 @@ const solve = async (problem) => {
       <div class="hero-dots" aria-hidden="true"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Engineer / App Developer</p>
+      <p class="hero-eyebrow">Embedded Engineer / App Developer</p>
       <h1 class="hero-headline">
         現場の困りごとを、<br />AIと開発の力で<br />「使えるツール」にします。
       </h1>
       <p class="hero-sub">
         Excel作業の自動化、業務改善アプリ、AI活用相談など、<br />
         アイデアの整理から実装・テストまで対応します。<br />
-        大規模開発と店舗運営の両方を経験したエンジニアが、<br />
+        C/C++を中心とした大規模開発と店舗運営の両方を経験したエンジニアが、<br />
         非エンジニアの方にもわかりやすく伴走します。
       </p>
       <a href="#contact" class="btn btn-primary scroll-btn">相談してみる</a>
@@ -73,7 +77,7 @@ const solve = async (problem) => {
       <div class="about-inner">
         <div class="about-image-wrap">
           <img
-            src="images/avatar.png"
+            src="images/avatar-optimized.jpg"
             alt="おかもとたいちの似顔絵"
             class="about-avatar"
             width="280"
@@ -87,7 +91,7 @@ const solve = async (problem) => {
         <div class="about-text">
           <h3 class="about-name">おかもとたいち</h3>
           <p>
-            業務改善アプリや小規模ツール開発を中心に、アイデア整理から実装・テストまで対応するエンジニアです。
+            C/C++を中心とした組み込み開発の実務経験を土台に、業務改善アプリや小規模ツール開発、AI活用相談まで対応するエンジニアです。
           </p>
           <p>
             新卒からカーナビゲーション開発に携わり、要件定義・設計・製造・テスト・運用まで、大規模開発の一連の工程を経験してきました。現在も車載システム開発に携わっています。
@@ -168,6 +172,9 @@ const solve = async (problem) => {
   <section class="section works" id="works">
     <div class="container">
       <h2 class="section-title">実績</h2>
+      <p class="section-lead works-lead">
+        業務改善・学習支援・自動化など、身近な課題を小さく使えるツールとして形にしてきました。
+      </p>
       <div class="works-grid">
 
         <div class="work-card">
@@ -290,6 +297,45 @@ const solve = async (problem) => {
           </div>
         </div>
 
+        <div class="work-card">
+          <div class="work-image-wrap">
+            <img
+              src="images/work4.jpg"
+              alt="ポートフォリオサイト制作のスクリーンショット"
+              class="work-screenshot work-screenshot-4"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="work-img-placeholder">
+              <span>スクリーンショット<br/>ここに入ります</span>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3 class="work-title">ポートフォリオサイト制作</h3>
+            <dl class="work-meta">
+              <div class="work-meta-row">
+                <dt>課題</dt>
+                <dd>案件提案時に、経験や相談しやすさ、制作実績をまとめて確認できる場所が必要だった。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>対応</dt>
+                <dd>GitHub Pagesで公開する1ページ構成のポートフォリオサイトを制作。問い合わせフォームとGoogleスプレッドシート連携も実装。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>工夫</dt>
+                <dd>AIで構成案や文章案を整理しながら、最終的な設計・実装・表示確認はエンジニアとして判断して進めた。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>担当範囲</dt>
+                <dd>企画整理、文章調整、設計、実装、フォーム連携、GitHub Pages公開。</dd>
+              </div>
+              <div class="work-meta-row">
+                <dt>使用技術</dt>
+                <dd>HTML、CSS、JavaScript、GitHub Pages、Google Apps Script、Claude Codeなど。</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -374,25 +420,32 @@ const solve = async (problem) => {
     <div class="container">
       <h2 class="section-title">まずは小さな相談からどうぞ</h2>
       <p class="contact-lead">
-        「こんな作業を自動化できる？」「このアイデアはアプリにできる？」「AIを業務に使ってみたい」<br />
-        そんな段階からで大丈夫です。内容が固まっていなくても、ヒアリングしながら一緒に整理します。
+        「こんな作業を自動化できる？」<br />
+        「このアイデアはアプリにできる？」<br />
+        「AIを業務に使ってみたい」<br />
+        そんな段階からで大丈夫です。<br />
+        内容が固まっていなくても、ヒアリングしながら一緒に整理します。
       </p>
       <form class="contact-form" action="#" method="post" novalidate>
         <div class="form-group">
           <label for="name">お名前</label>
-          <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+          <input type="text" id="name" name="name" placeholder="山田 太郎" autocomplete="name" required />
+          <p class="form-error" data-error-for="name"></p>
         </div>
         <div class="form-group">
           <label for="email">メールアドレス</label>
-          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required />
+          <p class="form-error" data-error-for="email"></p>
         </div>
         <div class="form-group">
           <label for="message">メッセージ</label>
           <textarea id="message" name="message" rows="6" placeholder="ご相談の内容をお気軽にどうぞ。「こんなのできる？」くらいでも大丈夫です。" required></textarea>
+          <p class="form-error" data-error-for="message"></p>
         </div>
         <button type="submit" class="btn btn-primary btn-send">送信する</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
       </form>
-      <p class="contact-note">フルリモートで対応しています。平日夜・土日祝のご相談も可能です。</p>
+      <p class="contact-note">フルリモートで対応しています。平日夜・土日祝のご相談も可能です。送信後、数日経っても返信がない場合は、お手数ですが再度ご連絡ください。</p>
     </div>
   </section>
 
@@ -404,6 +457,6 @@ const solve = async (problem) => {
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260626"></script>
 </body>
 </html>

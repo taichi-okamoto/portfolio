@@ -96,6 +96,15 @@ ul, ol {
   margin: 12px auto 0;
 }
 
+.section-lead {
+  max-width: 680px;
+  margin: -28px auto 48px;
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
 .btn {
   display: inline-block;
   padding: 0.8em 2.2em;
@@ -147,11 +156,19 @@ ul, ol {
 }
 
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-serif);
   font-size: 1.1rem;
   color: var(--color-primary);
   font-weight: 600;
   letter-spacing: 0.04em;
+  transition: color var(--transition);
+}
+
+.nav-logo:hover,
+.nav-logo:focus-visible {
+  color: var(--color-primary-dark);
 }
 
 .nav-links {
@@ -763,11 +780,42 @@ ul, ol {
   box-shadow: 0 0 0 3px rgba(224,123,79,0.15);
 }
 
+.form-group.is-error input,
+.form-group.is-error textarea {
+  border-color: #D85C45;
+  box-shadow: 0 0 0 3px rgba(216,92,69,0.12);
+}
+
+.form-error {
+  min-height: 1.4em;
+  font-size: 0.8rem;
+  color: #B84A36;
+  line-height: 1.4;
+}
+
 .btn-send {
   align-self: center;
   min-width: 180px;
   font-size: 1rem;
   padding: 0.85em 2.6em;
+}
+
+.form-status {
+  min-height: 1.6em;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.form-status.is-success {
+  color: var(--color-ok);
+  font-weight: 700;
+}
+
+.form-status.is-error {
+  color: #B84A36;
+  font-weight: 700;
 }
 
 .contact-note {
@@ -835,7 +883,7 @@ ul, ol {
 }
 
 /* スマートフォン */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   :root {
     --max-width: 100%;
   }
@@ -846,6 +894,12 @@ ul, ol {
 
   .section-title {
     margin-bottom: 40px;
+  }
+
+  .section-lead {
+    margin: -20px auto 36px;
+    font-size: 0.9rem;
+    text-align: left;
   }
 
   /* ナビ */
@@ -909,6 +963,7 @@ ul, ol {
 
   .hero-sub {
     font-size: 0.9rem;
+    line-height: 1.85;
   }
 
   /* About */
